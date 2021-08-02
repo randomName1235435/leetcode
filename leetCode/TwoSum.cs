@@ -10,19 +10,16 @@ namespace leetCode
     {
         public int[] TwoSumm(int[] nums, int target)
         {
+            var needed = new int[nums.Length];
             var ret = new int[2];
+            int currentNeeded = 0;
             for (int i = 0; i < nums.Count(); i++)
             {
                 var current = nums[i];
-                for (int j = i + 1; j < nums.Count(); j++)
+                currentNeeded = target - nums[i];
+                if (nums.Contains(currentNeeded))
                 {
-                    var next = nums[j];
-                    if (current + next == target)
-                    {
-                        ret[0] = i;
-                        ret[1] = j;
-                        return ret;
-                    }
+                    return new int[2] { i, Array.IndexOf(nums , currentNeeded,i+1) };
                 }
             }
             return null;
