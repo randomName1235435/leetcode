@@ -54,6 +54,7 @@
     <Compile Include="IntReverseClassTest.cs" />
     <Compile Include="LengthOfLongestSubstringTest.cs" />
     <Compile Include="LongestPalindromeClassTest.cs" />
+    <Compile Include="MyAtoiClassTest.cs" />
     <Compile Include="ToZigZagClass.cs" />
     <Compile Include="TwoSumTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
