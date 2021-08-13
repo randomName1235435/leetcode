@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="AddTwoNumbersClassTest.cs" />
     <Compile Include="FindMedianSortedArraysClassTest.cs" />
+    <Compile Include="IntReverseClassTest.cs" />
     <Compile Include="LengthOfLongestSubstringTest.cs" />
     <Compile Include="LongestPalindromeClassTest.cs" />
     <Compile Include="ToZigZagClass.cs" />

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AddTwoNumbers.cs" />
     <Compile Include="FindMedianSortedArrays.cs" />
+    <Compile Include="IntReverseClass.cs" />
     <Compile Include="LengthOfLongestSubstringClass.cs" />
     <Compile Include="LongestPalindromeClass.cs" />
     <Compile Include="Program.cs" />
