@@ -55,7 +55,7 @@ namespace leetCodeTest
         {
             var instance = new IsMatchClass();
             var result = instance.IsMatch("ab", ".*c");
-            Assert.IsTrue(result);
+            Assert.IsFalse(result);
         }
         [TestMethod]
         public void AnyWithMoreSameLiteral()

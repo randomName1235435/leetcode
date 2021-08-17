@@ -10,53 +10,11 @@ namespace leetCode
     {
         public bool IsMatch(string input, string pattern)
         {
-            string currentRestPattern = pattern;
-            int inputIndex = 0;
-            
-            while (currentRestPattern.Length != 0 || inputIndex < input.Length)
-            {
-                if (currentRestPattern.Length == 0 && inputIndex < input.Length) return false;
-                if (currentRestPattern.Length > 1 && currentRestPattern[1] == '*')
-                {
-                    if (inputIndex >= input.Length)
-                    {
-                        currentRestPattern = currentRestPattern.Substring(2);
-                        continue;
-                    }
-                    if (MatchWithAesterix(currentRestPattern.Substring(0, 2), input[inputIndex].ToString()))
-                    {
-                        inputIndex++;
-                    }
-                    else
-                    {
-                        currentRestPattern = currentRestPattern.Substring(2);
-                    }
-                }
-                else
-                {
-                    currentRestPattern = currentRestPattern.Substring(1);
-                    if (inputIndex >= input.Length)
-                    {
-                        return false;
-                    }
-                    if (DefaultMatch(currentRestPattern.Substring(0, 1), input[inputIndex].ToString()))
-                        inputIndex++;
-                    else return false;
-                }
-            }
-            return true;
-        }
-
-        private bool DefaultMatch(string pattern, string input)
-        {
-            if (pattern[0] == '.') return input != null && input.Length > 0;
-            return pattern == input;
-        }
-
-        private bool MatchWithAesterix(string pattern, string input)
-        {
-            if (pattern[0] == '.') return input != null && input.Length > 0;
-            return pattern[0].ToString() == input;
+            if (pattern.Length == 0) return input.Length == 0;
+            bool first_match = (input.Length != 0 && (pattern[0] == input[0] || pattern[0] == '.'));
+            if (pattern.Length >= 2 && pattern[1] == '*')
+                return (IsMatch(input, pattern.Substring(2)) || (first_match && IsMatch(input.Substring(1), pattern)));
+            return first_match && IsMatch(input.Substring(1), pattern.Substring(1));
         }
     }
 }
