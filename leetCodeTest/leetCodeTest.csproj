@@ -52,6 +52,7 @@
     <Compile Include="AddTwoNumbersClassTest.cs" />
     <Compile Include="FindMedianSortedArraysClassTest.cs" />
     <Compile Include="IntReverseClassTest.cs" />
+    <Compile Include="IntToRomanClassTest.cs" />
     <Compile Include="IsMatchClassTest.cs" />
     <Compile Include="IsPalindromeClassTest.cs" />
     <Compile Include="LengthOfLongestSubstringTest.cs" />
