@@ -59,6 +59,7 @@
     <Compile Include="LongestPalindromeClassTest.cs" />
     <Compile Include="MaxAreaClassTest.cs" />
     <Compile Include="MyAtoiClassTest.cs" />
+    <Compile Include="RomanToIntClassTest.cs" />
     <Compile Include="ToZigZagClass.cs" />
     <Compile Include="TwoSumTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
