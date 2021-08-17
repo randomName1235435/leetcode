@@ -46,6 +46,7 @@
     <Compile Include="AddTwoNumbers.cs" />
     <Compile Include="FindMedianSortedArrays.cs" />
     <Compile Include="IntReverseClass.cs" />
+    <Compile Include="IsMatchClass.cs" />
     <Compile Include="IsPalindromeClass.cs" />
     <Compile Include="LengthOfLongestSubstringClass.cs" />
     <Compile Include="LongestPalindromeClass.cs" />
