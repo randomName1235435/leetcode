@@ -50,6 +50,7 @@
     <Compile Include="IsPalindromeClass.cs" />
     <Compile Include="LengthOfLongestSubstringClass.cs" />
     <Compile Include="LongestPalindromeClass.cs" />
+    <Compile Include="MaxAreaClass.cs" />
     <Compile Include="MyAtoiClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
