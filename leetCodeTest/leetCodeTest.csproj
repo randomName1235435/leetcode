@@ -56,6 +56,7 @@
     <Compile Include="IsMatchClassTest.cs" />
     <Compile Include="IsPalindromeClassTest.cs" />
     <Compile Include="LengthOfLongestSubstringTest.cs" />
+    <Compile Include="LongestCommonPrefixClassTest.cs" />
     <Compile Include="LongestPalindromeClassTest.cs" />
     <Compile Include="MaxAreaClassTest.cs" />
     <Compile Include="MyAtoiClassTest.cs" />
