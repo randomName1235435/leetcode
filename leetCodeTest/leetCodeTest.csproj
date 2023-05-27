@@ -63,6 +63,7 @@
     <Compile Include="MyAtoiClassTest.cs" />
     <Compile Include="RomanToIntClassTest.cs" />
     <Compile Include="ToZigZagClass.cs" />
+    <Compile Include="ThreeSumClassTest.cs" />
     <Compile Include="TwoSumTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
