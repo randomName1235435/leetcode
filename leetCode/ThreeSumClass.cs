@@ -10,34 +10,49 @@ public class ThreeSumClass
 {
     public IList<IList<int>> ThreeSum(int[] nums)
     {
-        var distincted = new HashSet<Tuple<int, int, int>>();
         Array.Sort(nums);
-
-        var max = nums.Max();
-        var min = nums.Min();
+        IList<IList<int>> distincted = new List<IList<int>>();
 
         for (int i = 0; i < nums.Length - 2; i++)
         {
-            var cache = nums.Skip(i+1).GroupBy(item => item).ToDictionary(k => k.Key, v => v.Count());
-            for (int j = i + 1; j < nums.Length - 1; j++)
+            if (i > 0 && nums[i] == nums[i - 1])
             {
-                cache[nums[j]]--;
+                continue;
+            }
 
-                var needed = 0 - (nums[i] + nums[j]);
-                if (needed > max || needed < min) continue;
+            var left = i + 1;
+            var right = nums.Length - 1;
 
-                if (cache.ContainsKey(needed) && cache[needed] > 0)
+            while (left < right)
+            {
+                var sum = nums[i] + nums[left] + nums[right];
+
+                if (sum == 0)
                 {
-                    var key = new Tuple<int, int, int>(nums[i], nums[j], needed);
-                    if (!distincted.Contains(key))
+                    distincted.Add(new List<int> { nums[i], nums[left], nums[right] });
+
+                    while (left < right && nums[left] == nums[left + 1])
                     {
-                        distincted.Add(key);
+                        left++;
                     }
+                    while (left < right && nums[right] == nums[right - 1])
+                    {
+                        right--;
+                    }
+
+                    left++;
+                    right--;
+                }
+                else if (sum < 0)
+                {
+                    left++;
+                }
+                else
+                {
+                    right--;
                 }
             }
         }
-
-        var ret = distincted.Select(item => ((IList<int>)(new List<int>(3) { item.Item1, item.Item2, item.Item3 }))).ToList();
-        return ret;
+        return distincted;
     }
 }
