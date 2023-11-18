@@ -62,6 +62,7 @@
     <Compile Include="MaxAreaClassTest.cs" />
     <Compile Include="MyAtoiClassTest.cs" />
     <Compile Include="RomanToIntClassTest.cs" />
+    <Compile Include="ThreeSumClosestClassTest.cs" />
     <Compile Include="ToZigZagClass.cs" />
     <Compile Include="ThreeSumClassTest.cs" />
     <Compile Include="TwoSumTest.cs" />
