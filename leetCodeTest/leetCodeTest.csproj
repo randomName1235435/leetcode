@@ -61,6 +61,7 @@
     <Compile Include="LongestCommonPrefixClassTest.cs" />
     <Compile Include="LongestPalindromeClassTest.cs" />
     <Compile Include="MaxAreaClassTest.cs" />
+    <Compile Include="MergeTwoListsClassTest.cs" />
     <Compile Include="MyAtoiClassTest.cs" />
     <Compile Include="RemoveNthFromEndClassTest.cs" />
     <Compile Include="RomanToIntClassTest.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="ThreeSumClassTest.cs" />
     <Compile Include="TwoSumTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidParenthesesClassTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
