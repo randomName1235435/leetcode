@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GenerateParenthesesClass.cs" />
     <Compile Include="LetterCombinationsClass.cs" />
     <Compile Include="MergeTwoSortedListClass.cs" />
     <Compile Include="RemoveNthFromEndClass.cs" />

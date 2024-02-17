@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="AddTwoNumbersClassTest.cs" />
     <Compile Include="FindMedianSortedArraysClassTest.cs" />
+    <Compile Include="GenerateParenthesesClassTest.cs" />
     <Compile Include="IntReverseClassTest.cs" />
     <Compile Include="IntToRomanClassTest.cs" />
     <Compile Include="IsMatchClassTest.cs" />
