@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LetterCombinationsClass.cs" />
+    <Compile Include="RemoveNthFromEndClass.cs" />
     <Compile Include="ThreeSumClass.cs" />
     <Compile Include="AddTwoNumbers.cs" />
     <Compile Include="FindMedianSortedArrays.cs" />
