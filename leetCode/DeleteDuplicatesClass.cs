@@ -2,7 +2,6 @@
 
 namespace leetCode
 {
-
     public class DeleteDuplicatesClass
     {
         public class ListNode

@@ -67,6 +67,7 @@
     <Compile Include="ThreeSumClosestClass.cs" />
     <Compile Include="ToZigZagClass.cs" />
     <Compile Include="TwoSum.cs" />
+    <Compile Include="ClimbingStairsClass.cs" />
     <Compile Include="ValidParenthesesClass.cs" />
   </ItemGroup>
   <ItemGroup>
