@@ -4,6 +4,9 @@
     {
         public int MySqrt(int x)
         {
+            if (x == 0) return 0;
+            if (x == 1) return 1;
+
             int mid;
             var leftCandidate = 0;
             var rightCandidate = x / 2 + 1;
