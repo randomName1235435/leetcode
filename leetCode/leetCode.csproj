@@ -48,6 +48,7 @@
     <Compile Include="GenerateParenthesesClass.cs" />
     <Compile Include="LetterCombinationsClass.cs" />
     <Compile Include="MergeTwoSortedListClass.cs" />
+    <Compile Include="MySqrtClass.cs" />
     <Compile Include="RemoveNthFromEndClass.cs" />
     <Compile Include="ThreeSumClass.cs" />
     <Compile Include="AddTwoNumbers.cs" />

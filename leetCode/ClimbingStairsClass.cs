@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace leetCode
+﻿namespace leetCode
 {
     public class ClimbingStairsClass
     {

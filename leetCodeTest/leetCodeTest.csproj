@@ -65,6 +65,7 @@
     <Compile Include="MaxAreaClassTest.cs" />
     <Compile Include="MergeTwoListsClassTest.cs" />
     <Compile Include="MyAtoiClassTest.cs" />
+    <Compile Include="MySqrtClassTest.cs" />
     <Compile Include="RemoveNthFromEndClassTest.cs" />
     <Compile Include="RomanToIntClassTest.cs" />
     <Compile Include="ThreeSumClosestClassTest.cs" />
